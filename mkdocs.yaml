@@ -1,0 +1,57 @@
+site_name: Python-app-0
+site_description: Technical documentation for python-app-0
+site_author: Platform Team
+repo_url: https://github.com/gokhangurbuz/python-app
+edit_uri: edit/main/docs
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Overview: getting-started/overview.md
+    - Prerequisites: getting-started/prerequisites.md
+    - Local Development: getting-started/local-development.md
+  - Architecture:
+    - Technology Stack: architecture/tech-stack.md
+    - System Design: architecture/system-design.md
+    - Dependencies: architecture/dependencies.md
+  - API Reference:
+    - Overview: api/overview.md
+    - System Info Endpoint: api/info-endpoint.md
+    - Health Check Endpoint: api/health-endpoint.md
+  - Deployment:
+    - Kubernetes: deployment/kubernetes.md
+    - Configuration: deployment/configuration.md
+    - Environment Variables: deployment/environment.md
+  - Operations:
+    - Monitoring: operations/monitoring.md
+    - Logging: operations/logging.md
+    - Troubleshooting: operations/troubleshooting.md
+  - Development:
+    - Setup: development/setup.md
+    - Testing: development/testing.md
+    - Contributing: development/contributing.md
+
+theme:
+  name: material
+  palette:
+    primary: indigo
+    accent: indigo
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - tables
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+
+plugins:
+  - search
+  - techdocs-core
